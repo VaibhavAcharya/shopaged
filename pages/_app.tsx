@@ -1,3 +1,5 @@
+import "tailwindcss/tailwind.css";
+
 function _App({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }

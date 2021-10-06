@@ -1,3 +1,3 @@
 export default function Landing() {
-  return "Landing";
+  return <div className="bg-black text-white">Landing!</div>;
 }
