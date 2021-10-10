@@ -1,5 +1,6 @@
 import Wrapper from "../components/layout/Wrapper";
-import { Paragraph, H1, H2, H3, H4, H5, H6 } from "../components/ui/Typography";
+import Anchor from "../components/ui/Anchor";
+import { Paragraph, H1, H2, H3, H4, H5, H6, Strong, Emphasized } from "../components/ui/Typography";
 
 export default function Landing() {
   return (
@@ -13,11 +14,10 @@ export default function Landing() {
         <H6>Heading</H6>
         <Paragraph>
           There comes a time on a project when it’s worth investing in tooling
-          to protect the codebase. I’m not sure how to articulate when, but it’s
+          to protect the codebase. I’m not sure how to <Emphasized>articulate</Emphasized> when, but it’s
           somewhere after the project has proven to be something long-term and
           rough edges are starting to show, and before things feel like a
-          complete mess. Avoid premature optimization but avoid, uh, postmature
-          optimization.
+          complete mess. Avoid <Anchor>premature optimization</Anchor> but avoid, uh, <Strong>postmature</Strong> optimization.
         </Paragraph>
         <Paragraph noLineHeight="true">
           There comes a time on a project when it’s worth investing in tooling
