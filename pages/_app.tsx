@@ -9,6 +9,17 @@ function _App({ Component, pageProps }) {
 
   return (
     <IdProvider>
+      <Head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Shopaged</title>
+        <meta
+          name="description"
+          content="Shopping platform."
+        />
+        <link rel="shortcut icon" href="/logo.svg" type="image/x-icon" />
+      </Head>
       <Component {...pageProps} />
     </IdProvider>
   );
