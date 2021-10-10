@@ -1,0 +1,100 @@
+/* Set border-box as default sizing behavior for all elements. */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*  */
+html {
+  scroll-behavior: smooth;
+}
+
+/*  */
+body {
+  margin: 0;
+}
+
+/* Set min-height to screen for #__next */
+html,
+body {
+  height: 100%;
+}
+#__next {
+  min-height: 100%;
+}
+
+/* Variables */
+:root {
+  --colors-hue: 240deg;
+
+  --colors-bgBase: hsl(0deg 0% 0% / 100%);
+  --colors-bgElevated: hsl(0deg 0% 0% / 100%);
+  --colors-bgElevatedOverlay: hsl(0deg 0% 0% / 50%);
+  --colors-bgInteractiveSurface: hsl(0deg 0% 2.5% / 100%);
+  --colors-bgInteractiveSurfaceHover: hsl(0deg 0% 5% / 100%);
+  --colors-bgInteractive: hsl(0deg 0% 10% / 100%);
+  --colors-bgInteractiveHover: hsl(0deg 0% 12.5% / 100%);
+  --colors-bgInteractiveActive: hsl(var(--colors-hue) 40% 20% / 100%);
+  --colors-textPrimary: hsl(0deg 0% 100% / 100%);
+  --colors-textSecondary: hsl(0deg 0% 75% / 100%);
+  --colors-focusRing: hsl(0deg 0% 80% / 80%);
+
+  --space-small: 12px;
+  --space-medium: 16px;
+  --space-large: 20px;
+  --space-interactiveSmall: 6px;
+  --space-interactiveMedium: 10px;
+  --space-interactiveLarge: 14px;
+
+  --fontSizes-base: 18px;
+  --fontSizes-body: 1rem;
+  --fontSizes-bodySmall: 0.8rem;
+  --fontSizes-h6: 1.25rem;
+  --fontSizes-h5: 1.5rem;
+  --fontSizes-h4: 2rem;
+  --fontSizes-h3: 2.25rem;
+  --fontSizes-h2: 2.75rem;
+  --fontSizes-h1: 3rem;
+
+  --fonts-systemSans: ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  --fonts-systemSerif: ui-serif, Georgia, Cambria, "Times New Roman", Times,
+    serif;
+  --fonts-systemMono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --fonts-body: "Space Grotesk", var(--fonts-systemSans);
+  --fonts-heading: var(--fonts-systemSerif);
+  --fonts-code: var(--fonts-systemMono);
+
+  --fontWeights-light: 300;
+  --fontWeights-medium: 400;
+  --fontWeights-bold: 600;
+
+  --lineHeights-body: 150%;
+  --lineHeights-heading: 100%;
+  --lineHeights-code: 125%;
+
+  --letterSpacings-body: 0px;
+  --letterSpacings-heading: 0px;
+  --letterSpacings-code: 0px;
+
+  --sizes-small: 32px;
+  --sizes-medium: 48px;
+  --sizes-large: 64px;
+}
+
+/*  */
+html {
+  font-size: var(--fontSizes-base);
+}
+
+/*  */
+body {
+  background-color: var(--colors-bgBase);
+}

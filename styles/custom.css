@@ -1,0 +1,18 @@
+#wrapper {
+  width: min(100%, 768px);
+  margin: 0 auto;
+  padding: var(--space-medium);
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  padding-top: var(--space-medium);
+  padding-bottom: var(--space-medium);
+  background-color: hsl(0deg 0% 0% / 80%);
+  backdrop-filter: blur(2px);
+}
+#footer {
+  padding-top: var(--space-medium);
+  padding-bottom: var(--space-medium);
+}
